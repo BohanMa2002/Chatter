@@ -24,6 +24,7 @@
 		94E61A5E1F39FA3C007751A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94E61A611F39FA3C007751A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94E61A631F39FA3C007751A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94E61A691F39FA82007751A3 /* Chatter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Chatter.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +43,7 @@
 			children = (
 				94E61A541F39FA3C007751A3 /* Chatter */,
 				94E61A531F39FA3C007751A3 /* Products */,
+				94E61A6A1F39FA82007751A3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +58,23 @@
 		94E61A541F39FA3C007751A3 /* Chatter */ = {
 			isa = PBXGroup;
 			children = (
-				94E61A551F39FA3C007751A3 /* AppDelegate.swift */,
-				94E61A571F39FA3C007751A3 /* MasterViewController.swift */,
-				94E61A591F39FA3C007751A3 /* DetailViewController.swift */,
 				94E61A5B1F39FA3C007751A3 /* Main.storyboard */,
+				94E61A571F39FA3C007751A3 /* MasterViewController.swift */,
 				94E61A5E1F39FA3C007751A3 /* Assets.xcassets */,
+				94E61A691F39FA82007751A3 /* Chatter.entitlements */,
+				94E61A551F39FA3C007751A3 /* AppDelegate.swift */,
+				94E61A591F39FA3C007751A3 /* DetailViewController.swift */,
 				94E61A601F39FA3C007751A3 /* LaunchScreen.storyboard */,
 				94E61A631F39FA3C007751A3 /* Info.plist */,
 			);
 			path = Chatter;
+			sourceTree = "<group>";
+		};
+		94E61A6A1F39FA82007751A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +109,11 @@
 				TargetAttributes = {
 					94E61A511F39FA3C007751A3 = {
 						CreatedOnToolsVersion = 9.0;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
