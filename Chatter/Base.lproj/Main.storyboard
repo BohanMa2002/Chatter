@@ -111,7 +111,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Chatter" id="Zdf-7t-Un8">
-                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="7zz-bG-nOT"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="7zz-bG-nOT">
+                            <connections>
+                                <segue destination="q5b-t2-T9N" kind="modal" id="KuQ-OO-ScL"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
@@ -128,10 +132,23 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="Xws-Qb-edV"/>
                     </view>
+                    <navigationItem key="navigationItem" id="t9K-Lc-HvC">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="zkb-nF-twl">
+                            <connections>
+                                <segue destination="dhR-wy-YI6" kind="unwind" unwindAction="cancelButtonToMainMenuWithSegue:" id="hQv-ba-GiU"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="hOW-in-RBY">
+                            <connections>
+                                <segue destination="dhR-wy-YI6" kind="unwind" unwindAction="doneButtonToSaveNewPostWithSegue:" id="Z5z-Sr-nkE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UGb-tt-hPy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="dhR-wy-YI6" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1398" y="-628"/>
+            <point key="canvasLocation" x="2309.5999999999999" y="-630.13493253373315"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="r7l-gg-dq7">
@@ -149,8 +166,26 @@
             </objects>
             <point key="canvasLocation" x="-45" y="129"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="I9v-tG-fYY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="q5b-t2-T9N" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mbv-fs-UsZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bZZ-Qa-ILz" kind="relationship" relationship="rootViewController" id="BSK-Mx-KuG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ucn-kn-ZvK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1508.8" y="-630.58470764617698"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="6S0-TO-JiA"/>
+        <segue reference="Tll-UG-LXB"/>
     </inferredMetricsTieBreakers>
 </document>
