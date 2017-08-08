@@ -26,5 +26,5 @@ let postArray : [Post] =
     [
         Post(text: "life is short   ", date: NSDate(), userName: "BohanMa2002" ),
         Post(text: "so just yolo it!", date: NSDate(), userName: "BohanMa2002" )
-]
+    ]
 

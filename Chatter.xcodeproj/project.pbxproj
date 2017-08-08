@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		94197EF41F3A0C4A00F8373A /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94197EF31F3A0C4A00F8373A /* Post.swift */; };
+		946BC5EC1F3A55EE008B15A8 /* PostCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946BC5EB1F3A55EE008B15A8 /* PostCellTableViewCell.swift */; };
 		94E61A561F39FA3C007751A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E61A551F39FA3C007751A3 /* AppDelegate.swift */; };
 		94E61A581F39FA3C007751A3 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E61A571F39FA3C007751A3 /* MasterViewController.swift */; };
 		94E61A5A1F39FA3C007751A3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E61A591F39FA3C007751A3 /* DetailViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		94197EF31F3A0C4A00F8373A /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		946BC5EB1F3A55EE008B15A8 /* PostCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCellTableViewCell.swift; sourceTree = "<group>"; };
 		94E61A521F39FA3C007751A3 /* Chatter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chatter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94E61A551F39FA3C007751A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94E61A571F39FA3C007751A3 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				94E61A5B1F39FA3C007751A3 /* Main.storyboard */,
 				94E61A571F39FA3C007751A3 /* MasterViewController.swift */,
 				94197EF31F3A0C4A00F8373A /* Post.swift */,
+				946BC5EB1F3A55EE008B15A8 /* PostCellTableViewCell.swift */,
 				94E61A5E1F39FA3C007751A3 /* Assets.xcassets */,
 				94E61A691F39FA82007751A3 /* Chatter.entitlements */,
 				94E61A551F39FA3C007751A3 /* AppDelegate.swift */,
@@ -112,6 +115,7 @@
 				TargetAttributes = {
 					94E61A511F39FA3C007751A3 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						SystemCapabilities = {
 							com.apple.HealthKit = {
 								enabled = 0;
@@ -159,6 +163,7 @@
 				94E61A5A1F39FA3C007751A3 /* DetailViewController.swift in Sources */,
 				94E61A581F39FA3C007751A3 /* MasterViewController.swift in Sources */,
 				94E61A561F39FA3C007751A3 /* AppDelegate.swift in Sources */,
+				946BC5EC1F3A55EE008B15A8 /* PostCellTableViewCell.swift in Sources */,
 				94197EF41F3A0C4A00F8373A /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,11 +301,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = BU8Y7TA593;
 				INFOPLIST_FILE = Chatter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Bohan.Chatter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -310,6 +317,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = BU8Y7TA593;
 				INFOPLIST_FILE = Chatter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

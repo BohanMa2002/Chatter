@@ -1,3 +1,4 @@
+
 //
 //  MasterViewController.swift
 //  Chatter
@@ -77,10 +78,17 @@ class MasterViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         
-        let posts = self.posts[indexPath.row] as! Post
-        cell.textLabel!.text = posts.text
+        let cell = tableView.dequeueReusableCell(withIdentifier: "postCell", for: indexPath) as! PostCellTableViewCell
+        
+        let post = posts[indexPath.row]
+        
+        cell.postTextLabel.text = post.text
+        
+        cell.dateLabel.text = DateFormatter.localizedString(from: post.date as Date, dateStyle: .short, timeStyle: .short)
+        
+        cell.userNameLabel.text = post.userName
+        
         return cell
     }
     
@@ -94,5 +102,4 @@ class MasterViewController: UITableViewController {
         
     }
 }
-
 
