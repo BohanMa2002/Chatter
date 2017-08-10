@@ -1,45 +1,41 @@
-//
 //  DetailViewController.swift
 //  Chatter
-//
-//  Created by iD Student on 8/8/17.
-//  Copyright © 2017 BohanMa. All rights reserved.
-//
+
 
 import UIKit
 
 class DetailViewController: UIViewController {
-
-    @IBOutlet weak var detailDescriptionLabel: UILabel!
-
-
-    func configureView() {
-        // Update the user interface for the detail item.
-        if let detail = detailItem {
-            if let label = detailDescriptionLabel {
-                label.text = detail.description
-            }
-        }
-    }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        configureView()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    var detailItem: NSDate? {
+    
+    //@IBOutlet weak var detailUserNameLabel: UITextField!
+    //@IBOutlet weak var detailDescriptionLabel: UITextField!
+   // @IBOutlet weak var startDate: UIDatePicker!
+   // @IBOutlet weak var dueDate: UIDatePicker!
+    
+    
+    var detailItem: Post? {
         didSet {
-            // Update the view.
-            configureView()
+            self.configureView()
         }
     }
-
-
+    
+    func configureView() {
+        
+        var post = detailItem
+        
+        //detailDescriptionLabel?.text = post?.text
+        //detailUserNameLabel?.text = post?.userName
+        //startDate.date = post?.date as! Date
+    }
+    
+    override func viewDidLoad() {
+        
+        super.viewDidLoad()
+        self.configureView()
+    }
+    
+    override func didReceiveMemoryWarning() {
+        
+        super.didReceiveMemoryWarning()
+    }
 }
 

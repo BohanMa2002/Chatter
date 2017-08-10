@@ -10,10 +10,9 @@ import UIKit
 
 class PostCellTableViewCell: UITableViewCell {
     @IBOutlet weak var postTextLabel: UILabel!
-    
-    @IBOutlet weak var dateLabel: UILabel!
+    //@IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var userNameLabel: UILabel!
-    @IBOutlet weak var textLabel: UILabel!
+    @IBOutlet weak var endDate: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

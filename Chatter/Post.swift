@@ -10,21 +10,21 @@ import Foundation
 
 class Post
 {
-    var text: String
-    var date: NSDate
-    var userName: String
+    var title: String
+    var dateStart: NSDate
+    var dateEnd : NSDate
+    var subject: String
     
-    init(text: String, date: NSDate, userName: String)
+    init(title: String, dateStart: NSDate, dateEnd : NSDate, subject: String)
     {
-        self.text = text
-        self.date = date
-        self.userName = userName
+        self.title = title
+        self.dateStart = dateStart
+        self.subject = subject
+        self.dateEnd = dateEnd
     }
 }
 
 let postArray : [Post] =
     [
-        Post(text: "life is short   ", date: NSDate(), userName: "BohanMa2002" ),
-        Post(text: "so just yolo it!", date: NSDate(), userName: "BohanMa2002" )
     ]
 

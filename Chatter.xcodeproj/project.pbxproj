@@ -15,6 +15,7 @@
 		94E61A5D1F39FA3C007751A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94E61A5B1F39FA3C007751A3 /* Main.storyboard */; };
 		94E61A5F1F39FA3C007751A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94E61A5E1F39FA3C007751A3 /* Assets.xcassets */; };
 		94E61A621F39FA3C007751A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94E61A601F39FA3C007751A3 /* LaunchScreen.storyboard */; };
+		94F17BC31F3CA67D00AB566D /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F17BC21F3CA67D00AB566D /* NewPostViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		94E61A611F39FA3C007751A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94E61A631F39FA3C007751A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94E61A691F39FA82007751A3 /* Chatter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Chatter.entitlements; sourceTree = "<group>"; };
+		94F17BC21F3CA67D00AB566D /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				94E61A591F39FA3C007751A3 /* DetailViewController.swift */,
 				94E61A601F39FA3C007751A3 /* LaunchScreen.storyboard */,
 				94E61A631F39FA3C007751A3 /* Info.plist */,
+				94F17BC21F3CA67D00AB566D /* NewPostViewController.swift */,
 			);
 			path = Chatter;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 				94E61A561F39FA3C007751A3 /* AppDelegate.swift in Sources */,
 				946BC5EC1F3A55EE008B15A8 /* PostCellTableViewCell.swift in Sources */,
 				94197EF41F3A0C4A00F8373A /* Post.swift in Sources */,
+				94F17BC31F3CA67D00AB566D /* NewPostViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
